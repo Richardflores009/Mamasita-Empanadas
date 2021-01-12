@@ -7,7 +7,8 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Appetizers' },
     { name: 'Empanadas' },
-    { name: 'Beverages' }
+    { name: 'Beverages' },
+    { name: 'Desserts' }
   ]);
 
   console.log('categories seeded');
@@ -70,12 +71,12 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Tales at Bedtime',
+      name: 'Dessert 1',
       category: categories[3]._id,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
+      image: '',
+      price: 1.00,
       quantity: 100
     }
   ]);
