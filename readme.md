@@ -1,4 +1,4 @@
-# Shop-Shop
+# group-project
 
 ## Table of Contents
 * [Description](#description)
