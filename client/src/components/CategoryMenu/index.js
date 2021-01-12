@@ -12,9 +12,6 @@ function CategoryMenu() {
 
 const dispatch = useDispatch();
 const categories = useSelector(state => state.reducer.categories)
-// const cart = useSelector(state => state.reducer.cart)
-
-
 
 
 useEffect(() => {

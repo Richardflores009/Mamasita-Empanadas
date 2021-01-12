@@ -1,13 +1,13 @@
 import React from "react";
 import Cart from '../components/Cart';
 
-const Home = () => {
+const Contact = () => {
   return (
     <div className="container">
-      <h1>Homepage</h1>
+        <h1>Contact Us</h1>
       <Cart />
     </div>
   );
 };
 
-export default Home;
+export default Contact;

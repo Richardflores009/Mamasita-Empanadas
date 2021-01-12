@@ -33,15 +33,17 @@ Through Local Server:<br>
 This Repository is covered under the following license: [ISC]
 
 ## Contributors:
-Richard Flores
+Christopher Walston <br>
+Joseph DeFelice <br>
+Richard Flores <br>
+Stephen Pena <br>
+Tara Brichetto <br>
 
 ## Links:
-Deployed Application: https://still-spire-22068.herokuapp.com/ <br>
-Github Repository: https://github.com/Richardflores009/shop-shop <br>
+Deployed Application:  <br>
+Github Repository: https://github.com/Richardflores009/group-project3 <br>
 
 ## Screenshots:
-
-![](https://raw.githubusercontent.com/Richardflores009/shop-shop/main/assets/img/Screen%20Shot%202021-01-10%20at%204.12.37%20PM.png)
 
 ## Questions:
 Contact me:<br>
