@@ -15,6 +15,7 @@ import OrderHistory from "./pages/OrderHistory";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Story from "./pages/Story";
+import Footer from "./components/Footer";
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -50,6 +51,7 @@ function App() {
           </StoreProvider>
         </div>
       </Router>
+      <Footer/>
     </ApolloProvider>
   );
 }

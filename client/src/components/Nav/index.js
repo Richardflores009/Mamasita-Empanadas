@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Cart from '../Cart';
 
 
 function Nav() {
@@ -25,7 +26,11 @@ function Nav() {
     } else {
       return (
         <ul className="nav">
-
+          <li className="nav-item">
+            <Link to="/">
+              Home
+            </Link>
+          </li>
           <li className="nav-item">
             <Link to="/story">
              Our Story
@@ -55,7 +60,6 @@ function Nav() {
               Login
             </Link>
           </li>
-
         </ul>
       );
     }
