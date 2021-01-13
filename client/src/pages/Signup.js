@@ -39,45 +39,54 @@ function Signup(props) {
       <h2 className="content-title">Create An Account</h2>
 
       <form onSubmit={handleFormSubmit}>
-          <label htmlFor="firstName">First Name:</label>
-          <input
+          
+          <div className="form-row">
+            <label htmlFor="firstName">First Name:</label>
+            <input
             placeholder="First"
             name="firstName"
             type="firstName"
             id="firstName"
             onChange={handleChange}
           />
-
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            placeholder="Last"
-            name="lastName"
-            type="lastName"
-            id="lastName"
-            onChange={handleChange}
-          />
-
-          <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
+          </div>
           
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
+          <div className="form-row">
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              placeholder="Last"
+              name="lastName"
+              type="lastName"
+              id="lastName"
+              onChange={handleChange}
+            />
+          </div>
           
-          <button type="submit">
-            Sign Up
-          </button>
+          <div className="form-row">
+            <label htmlFor="email">Email:</label>
+            <input
+              placeholder="youremail@test.com"
+              name="email"
+              type="email"
+              id="email"
+              onChange={handleChange}
+            />
+          </div>
+          
+          <div className="form-row">
+            <label htmlFor="pwd">Password:</label>
+            <input
+              placeholder="******"
+              name="password"
+              type="password"
+              id="pwd"
+              onChange={handleChange}
+            />
+          </div>
+          
+            <button type="submit">
+              Create Account
+            </button>
       </form>
     </div>
   );

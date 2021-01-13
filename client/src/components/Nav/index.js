@@ -70,7 +70,7 @@ function Nav() {
 
       <h1 className="nav-title">
         <Link to="/">
-          Empanadas
+          Mamasita's Empañadas
         </Link>
       </h1>
 

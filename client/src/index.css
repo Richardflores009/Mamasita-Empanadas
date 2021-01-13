@@ -2,6 +2,7 @@
   --primary: #7b2d26;
   --secondary: #d7c9aa;
   --tertiary: #f0f3f5;
+  --yellow: #f6aa1c;
 }
 
 * {
@@ -28,6 +29,7 @@ header {
   flex-direction: row;
 }
 .nav-title {
+  width: 100%;
   float: left;
   font-size: 50px;
   padding: 0 10px;
@@ -40,7 +42,7 @@ header {
   transition: 0.3s;
 }
 .nav-title a:hover {
-  color: #f6aa1c;
+  color: var(--yellow);
 }
 nav {
   overflow: hidden;
@@ -64,7 +66,7 @@ nav {
   transition: 0.3s;
 }
 .nav-item a:hover {
-  color: #f6aa1c;
+  color: var(--yellow);
 }
 
 /*our story*/
@@ -102,10 +104,13 @@ nav {
   border: none;
   padding: 15px 15px;
   margin: 0 auto;
-  background: #f6aa1c;
+  background: var(--yellow);
 }
 .hero button:hover {
   cursor: pointer;
+}
+.hero-body button:focus {
+  outline: none;
 }
 .hero-body p {
   margin: 0 auto;
@@ -152,9 +157,13 @@ nav {
 
 
 /*sign up*/
+.go-back a {
+  text-decoration: none;
+  color: var(--primary);
+}
 .form-wrapper {
   background: white;
-  padding: 50px;
+  padding: 30px;
   width: 50%;
   margin: 50px auto;
   border-radius: 5px;
@@ -163,34 +172,47 @@ form {
   text-align: center;
   margin: 25px 0;
   width: 100%;
-  margin: 0 auto;
-  display: flex;
+  display: block;
 }
 .form-row {
-  margin: 5px;
+  margin: 5px auto;
+  width: 50%;
 }
-label {
+.form-row label {
+  display: block;
   font-size: 25px;
-  text-align: lefr;
+  text-align: left;
+  margin: 10px auto;
 }
-input {
+.form-row input {
+  display: block;
   border: none;
   border-bottom: thin solid black;
-  margin: 0 10px;
+  margin: 13.5px auto;
   padding: 5px;
-  width: 50%;
+  width: 100%;
 }
 .form-row input:focus {
   border: none;
   outline: none;
-  border-bottom: thin solid var(--secondary);
+  border-bottom: thin solid var(--primary);
 }
 .form-row input:active {
   border: none;
-  border-bottom: thin solid var(--secondary);
+  border-bottom: thin solid var(--primary);
 }
-.form-row button {
-
+form button {
+  border: none;
+  background: var(--primary);
+  height: auto;
+  width: 25%;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+}
+form button:hover {
+  cursor: pointer;
 }
 
 /*footer*/
@@ -205,7 +227,7 @@ footer {
   color: white;
 }
 footer a:hover {
-  color: #f6aa1c;
+  color: var(--yellow);
 }
 .left-footer {
   flex: 10%;
