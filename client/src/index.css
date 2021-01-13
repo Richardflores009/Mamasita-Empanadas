@@ -1,8 +1,9 @@
 :root {
   --primary: #7b2d26;
-  --secondary: #d7c9aa;
-  --tertiary: #f0f3f5;
-  --yellow: #f6aa1c;
+  --secondary: #f0f3f5;
+  --tertiary: #ede7e3;
+  --yellow: #ffcb47;
+  --btn: #f4978e;
 }
 
 * {
@@ -14,8 +15,10 @@ html,
 body {
   min-height: 100%;
 }
+
 body {
-  background: var(--secondary);
+  background: url('./assets/img/login-bg.jpg');
+  background-position: center;
   font-family: 'Bitter', serif;
 }
 
@@ -35,14 +38,14 @@ header {
   padding: 0 10px;
 }
 .nav-title a {
-  color: var(--tertiary);
+  color: var(--yellow);
   text-decoration: none;
   letter-spacing: 3px;
   font-family: 'Fraunces', serif;
   transition: 0.3s;
 }
 .nav-title a:hover {
-  color: var(--yellow);
+  color: var(--tertiary);
 }
 nav {
   overflow: hidden;
@@ -87,7 +90,7 @@ nav {
   border-radius: 10px;
   background:white;
   text-align: center;
-  box-shadow: 0 5px 15px var(--primary);
+  box-shadow: 0 5px 15px black;
 }
 .hero-body h1 {
   background: var(--primary);
@@ -156,7 +159,7 @@ nav {
 }
 
 
-/*sign up*/
+/*sign up/log in*/
 .go-back a {
   text-decoration: none;
   color: var(--primary);
@@ -167,6 +170,10 @@ nav {
   width: 50%;
   margin: 50px auto;
   border-radius: 5px;
+  box-shadow: 0 5px 15px black;
+}
+.login-wrapper {
+  margin: 129px auto;
 }
 form {
   text-align: center;
@@ -214,7 +221,10 @@ form button {
 form button:hover {
   cursor: pointer;
 }
-
+.error-text {
+  padding: 10px;
+  color: red;
+}
 /*footer*/
 footer {
   display: flex;
@@ -223,11 +233,35 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 20px 0;
-  background: #621708;
+  background: var(--primary);
   color: white;
 }
 footer a:hover {
   color: var(--yellow);
+}
+.fa-yelp {
+  transition: 0.3s;
+}
+.fa-yelp:hover {
+  color: #c41200 ;
+}
+.fa-facebook-square {
+  transition: 0.3s;
+}
+.fa-facebook-square:hover {
+  color: #1877f2;
+}
+.fa-instagram {
+  transition: 0.3s;
+}
+.fa-instagram:hover {
+  color: #8a3ab9;
+}
+.fa-twitter-square {
+  transition: 0.3s;
+}
+.fa-twitter-square:hover {
+  color: #00acee;
 }
 .left-footer {
   flex: 10%;

@@ -4,7 +4,7 @@ function Footer() {
     return(
         <footer>
             <div className="left-footer">
-                <h4 className="footer-title">Company</h4>
+                <h4 className="footer-title">Mamasita's Empañadas</h4>
                 <p>
                     <a href="https://goo.gl/maps/TYGQ49kfWZjct1fF8" target="_blank">
                         1234 N. Antarctica Ln 
@@ -12,7 +12,7 @@ function Footer() {
                         South Pole, Antarctica 22215
                     </a>
                 </p>
-                <p>&copy; Company 2021</p>
+                <p>&copy; 2021</p>
             </div>
             <div className="right-footer">
                 <a href="mailto:chrisrw300@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
