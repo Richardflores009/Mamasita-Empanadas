@@ -160,6 +160,7 @@ nav {
 
 /*contact us*/
 .contact-wrapper {
+  margin: 11px 0;
   display: flex;
   text-align: left;
 }
