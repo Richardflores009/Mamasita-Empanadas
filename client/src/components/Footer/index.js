@@ -9,9 +9,10 @@ function Footer() {
                     <a href="https://goo.gl/maps/TYGQ49kfWZjct1fF8" target="_blank">
                         1234 N. Antarctica Ln 
                         <br></br>
-                        South Pole, Antarctica 22215
+                        South Pole, Antarctica
                     </a>
                 </p>
+                <p>888-888-8888</p>
                 <p>&copy; 2021</p>
             </div>
             <div className="right-footer">
