@@ -37,7 +37,7 @@ function Signup(props) {
       </div>
 
       <h2 className="content-title">Create An Account</h2>
-
+      <p className="small-text">(...it's free)</p>
       <form onSubmit={handleFormSubmit}>
           
           <div className="form-row">

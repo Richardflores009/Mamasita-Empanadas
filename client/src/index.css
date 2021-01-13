@@ -109,6 +109,11 @@ nav {
   margin: 0 auto;
   background: var(--yellow);
 }
+.hero button a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
 .hero button:hover {
   cursor: pointer;
 }
@@ -195,6 +200,10 @@ nav {
 .go-back a {
   text-decoration: none;
   color: var(--primary);
+}
+.small-text {
+  font-size: 12px;
+  text-align: center;
 }
 .form-wrapper {
   background: white;
