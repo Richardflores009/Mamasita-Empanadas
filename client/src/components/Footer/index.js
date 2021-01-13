@@ -15,7 +15,7 @@ function Footer() {
                 <p>&copy; 2021</p>
             </div>
             <div className="right-footer">
-                <a href="mailto:chrisrw300@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:mamasitasempanadas@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 <a href='#'><i class="fa fa-yelp" aria-hidden="true"></i></a>
                 <a href='#'><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                 <a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a>
