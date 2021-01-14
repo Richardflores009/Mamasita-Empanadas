@@ -1,4 +1,4 @@
-# group-project
+# Mamasita Empañadas
 
 ## Table of Contents
 * [Description](#description)
