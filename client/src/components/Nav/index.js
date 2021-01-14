@@ -71,6 +71,8 @@ function Nav() {
       <h1 className="nav-title">
         <Link to="/">
           Mamasita's Empañadas
+          <br></br>
+          <span className="header-small">The Queen of Empañadas.</span>
         </Link>
       </h1>
 
