@@ -1,9 +1,7 @@
 :root {
   --primary: #7b2d26;
   --secondary: #f0f3f5;
-  --tertiary: #ede7e3;
   --yellow: #ffcb47;
-  --btn: #f4978e;
 }
 
 * {
@@ -26,7 +24,7 @@ body {
   padding: 30px 0;
   text-align: center;
   color: var(--primary);
-  background: var(--tertiary);
+  background: var(--secondary);
 }
 .sub-content-title {
   font-size: 25px;
@@ -63,7 +61,7 @@ header {
   transition: 0.3s;
 }
 .nav-title a:hover {
-  color: var(--tertiary);
+  color: var(--secondary);
 }
 nav {
   overflow: hidden;
@@ -83,7 +81,7 @@ nav {
 .nav-item a {
   text-decoration: none;
   padding: 0 10px;
-  color: var(--tertiary);
+  color: var(--secondary);
   font-size: 15px;
   transition: 0.3s;
 }
@@ -102,7 +100,7 @@ nav {
 .hero-body {
   position: absolute;
   top: 300px;
-  right: 250px;
+  right: 150px;
   width: 25%;
   margin: 0 100px;
   padding: 0;
@@ -159,7 +157,7 @@ nav {
 .story-top p {
   font-size: 60px;
   text-align: center;
-  color: var(--tertiary);
+  color: var(--secondary);
   padding: 300px 0;
 }
 .story-div {
@@ -176,11 +174,12 @@ nav {
   height: 500px;
 }
 .story-div-right {
-  margin: 10px;
-  flex: 70%;
+  margin: 20px;
+  flex: 60%;
 }
 .story-div-right p {
-  font-size: 25px;
+  font-size: 23px;
+  text-align: left;
   line-height: 2;
 }
 .inside {
@@ -226,7 +225,7 @@ nav {
   background-position: center;
   border-radius: 50%;
   box-shadow: 0 5px 15px black;
-  margin: 5px 15px;
+  margin: 15px;
   transition: 0.3s;
 }
 .partner-1:hover, .partner-2:hover, .partner-3:hover {
@@ -236,6 +235,56 @@ nav {
 .partner-item p {
   margin: 15px auto;
   font-size: 20px;
+}
+
+/*menu*/
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu-card-wrapper {
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px 20px;
+  background: var(--primary);
+  width: 25%;
+  box-shadow: 0 5px 10px black;
+  transition: 0.3s;
+}
+.menu-card-wrapper:hover {
+  transform: scale(1.05);
+  cursor: default;
+}
+.menu-item-img {
+  margin: 5px 5px;
+}
+.menu-item-img img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+.menu-item-title {
+  margin: 5px;
+  color: var(--yellow);
+}
+.menu-item-price {
+  margin: 15px 0;
+  color: white;
+}
+.menu-item-link {
+  margin: 0;
+  padding: 15px 0;
+  background: var(--yellow);
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+}
+.menu-item-link a {
+  text-decoration: none;
+  color: black;
+}
+.menu-item-link:hover {
+  cursor: pointer;
 }
 
 /*contact us*/

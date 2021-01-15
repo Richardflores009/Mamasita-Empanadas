@@ -1,31 +1,37 @@
 :root {
-  --hover: #ffcb47;
-  --tertiary: #f0f3f5;
+  --primary: #7b2d26;
+  --secondary: #f0f3f5;
+  --tertiary: #ede7e3;
+  --yellow: #ffcb47;
+  --btn: #f4978e;
 }
 
 .cart-i::before {
-  color: var(--hover);
+  color: var(--secondary);
 }
 .cart {
     position: fixed;
-    top: 75px;
+    top: 125px;
     right: 30px;
     min-width: 20%;
     max-width: 30%;
     max-height: 60%;
     background-color: var(--tertiary);
     overflow: auto;
-    padding: .5rem;
+    padding: 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
     border-bottom-left-radius: .5rem;
     transition: 0.2s;
   }
   
   .cart h2 {
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--dark);
-    padding-bottom: .5rem;
-    margin: 1rem 0;
+    text-align: center;
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 2rem;
+    border-bottom: thick double var(--yellow);
+    padding: 10px;
+    margin: 0;
   }
   
   .cart .close {
@@ -33,16 +39,22 @@
     top: .5rem;
     right: .5rem;
     cursor: pointer;
-    color: var(--hover);
+    color: var(--secondary);
+    transition: 0.3s;
   }
   
-  .cart .close:hover {
-    text-decoration: underline;
+  .cart:hover {
+    text-decoration: none;
+  }
+  
+  .close:hover {
+    text-decoration: none;
+    color: var(--yellow);
   }
   
   .cart-closed {
     position: absolute;
-    top: 25px;
+    top: 30px;
     right: 20px;
     font-size: 35px;
     text-align: center;
@@ -50,11 +62,12 @@
     padding: .25rem;
     width: 50px;
     height: 50px;
+    color: var(--secondary);
     transition: 0.3s;
   }
   
   .cart-closed:hover {
-    transform: rotate(-10deg);
+    transform: scale(1.05);
     cursor: pointer;
   }
   

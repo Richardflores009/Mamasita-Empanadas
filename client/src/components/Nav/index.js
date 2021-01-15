@@ -70,9 +70,9 @@ function Nav() {
 
       <h1 className="nav-title">
         <Link to="/">
-          Mamasita's Empañadas
+          Mamasita's Empanadas
           <br></br>
-          <span className="header-small">The Queen of Empañadas.</span>
+          <span className="header-small">The Queen of Empanadas.</span>
         </Link>
       </h1>
 

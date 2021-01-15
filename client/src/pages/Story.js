@@ -18,15 +18,19 @@ const Story = () => {
         </div>
         <div className="story-div-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          My name is Raquel Flores, and I enjoy cooking and spending time with family and friends.  
+          It all started when I was a little girl. I had a Holly Hobbie Playhouse with a kitchen, stove, and refrigerator. 
+          I am a firm believer that the best way to spend time together with family and friends is with food.   
+          I cook traditional Puerto Rican meals every Easter, Thanksgiving and Christmas. 
+          To name a few things, I make arroz con gandules, empanadas, plantains, stew beef with potatoes and pasteles.  
+          The one thing that everyone enjoys is the empanadas.  
+          They are always a big hit and they can never get enough.  
+          I always bring my traditional empanadas to family and friend events. 
+          A friend asked me if she can buy two dozens, but I never thought about selling them.  
+          Ever since then I started cooking empanadas at home and selling them.  
+          It’s amazing how the word got around about my empanadas. 
+          I feel truly blessed to be able to share my Spanish tradition with everyone around me.   
+          Food tastes better when you share it with the people you love.               </p>
         </div>
       </div>
 

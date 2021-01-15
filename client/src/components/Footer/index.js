@@ -4,7 +4,7 @@ function Footer() {
     return(
         <footer>
             <div className="left-footer">
-                <h4 className="footer-title">Mamasita's Empañadas</h4>
+                <h4 className="footer-title">Mamasita's Empanadas</h4>
                 <p>
                     <a href="https://goo.gl/maps/TYGQ49kfWZjct1fF8" target="_blank">
                         1234 N. Antarctica Ln 

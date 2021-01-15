@@ -3,7 +3,7 @@ import Cart from '../components/Cart';
 
 const Contact = () => {
   return (
-    <div className="form-wrapper">
+    <section className="form-wrapper">
         <h1 className="content-title">Have Any Questions?</h1>
         <div className="contact-wrapper">
 
@@ -28,7 +28,7 @@ const Contact = () => {
 
               <br></br><span className="contact-text-space">Sincerely,</span><br></br>
 
-              <span className="contact-text-space">Mamasita's Empañadas</span>
+              <span className="contact-text-space">Mamasita's Empanadas</span>
             </p>
             <ul className="contact-list"> 
               <li className="contact-item"><a href="mailto:mamasitasempanadas@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
 
       <Cart />
-    </div>
+    </section>
   );
 };
 
