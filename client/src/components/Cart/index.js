@@ -78,15 +78,18 @@ if (!cartOpen) {
   }
 
   return (
-    <div className="cart">
+    <div className="cart-wrapper">
       <div className="close" onClick={ () =>  dispatch(toggleCart())}>[close]</div>
       <h2>Shopping Cart</h2>
       {cart.length ? (
         <div>
-          {cart.map(item => (
-            <CartItem key={item._id} item={item} />
-          ))}
-          <div className="flex-row space-between">
+          <div className="cart-item">
+            {cart.map(item => (
+              <CartItem key={item._id} item={item} />
+            ))}
+          </div>
+          
+          <div className="cart-bottom">
             <strong>Total: ${calculateTotal()}</strong>
             {
               Auth.loggedIn() ?
