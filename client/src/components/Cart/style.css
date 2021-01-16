@@ -1,66 +1,92 @@
-.cart {
+:root {
+  --primary: #7b2d26;
+  --secondary: #f0f3f5;
+  --tertiary: #ede7e3;
+  --yellow: #ffcb47;
+  --btn: #f4978e;
+}
+
+.cart-i::before {
+  color: var(--secondary);
+}
+.cart-wrapper {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 125px;
+    right: 30px;
     min-width: 20%;
     max-width: 30%;
     max-height: 60%;
-    background-color: var(--light);
+    background-color: var(--tertiary);
     overflow: auto;
-    padding: .5rem;
+    padding: 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
     border-bottom-left-radius: .5rem;
+    transition: 0.2s;
   }
   
-  .cart h2 {
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--dark);
-    padding-bottom: .5rem;
-    margin: 1rem 0;
+  .cart-wrapper h2 {
+    text-align: center;
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 2rem;
+    border-bottom: thick double var(--yellow);
+    padding: 10px;
+    margin: 0;
   }
   
-  .cart .close {
+  .cart-wrapper .close {
     position: absolute;
     top: .5rem;
     right: .5rem;
     cursor: pointer;
-    color: var(--tertiary);
+    color: var(--secondary);
+    transition: 0.3s;
   }
   
-  .cart .close:hover {
-    text-decoration: underline;
+  .cart:hover {
+    text-decoration: none;
+  }
+  
+  .close:hover {
+    text-decoration: none;
+    color: var(--yellow);
   }
   
   .cart-closed {
-    position: fixed;
-    top: 2%;
-    right: 1%;
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: var(--secondary);
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 35px;
+    text-align: center;
     border-radius: 50%;
     padding: .25rem;
     width: 50px;
     height: 50px;
+    color: var(--secondary);
+    transition: 0.3s;
   }
   
   .cart-closed:hover {
-    transform: rotate(8deg);
+    transform: scale(1.05);
+    cursor: pointer;
   }
   
-  .cart img {
-    width: 70px;
-    margin-right: 1rem;
+  .cart-item {
+    margin: 5px;
+  }
+  .cart-wrapper img {
+    width: 25%;
+    margin: 5px;
   }
   
-  .cart input {
+  .cart-wrapper input {
     width: 50px;
     padding: 0;
     margin: 0 .5rem 1rem 0;
   }
   
   @media screen and (max-width: 768px) {
-    .cart {
+    .cart-wrapper {
       position: relative;
       max-width: 100%;
       max-height: auto;

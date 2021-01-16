@@ -1,12 +1,14 @@
 import React from "react";
+import Jumbotron from '../components/Jumbotron';
 import Cart from '../components/Cart';
 
 const Home = () => {
   return (
-    <div className="container">
-      <h1>Homepage</h1>
+    <section className="container">
       <Cart />
-    </div>
+
+      <Jumbotron/>
+    </section>
   );
 };
 

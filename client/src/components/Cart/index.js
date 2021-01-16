@@ -71,38 +71,38 @@ if (!cartOpen) {
       <div className="cart-closed" onClick={ () =>  dispatch(toggleCart())}>
         <span
           role="img"
-          aria-label="trash">🛒</span>
+          aria-label="trash"><i class="fa fa-shopping-cart cart-i" aria-hidden="true"></i>
+          </span>
       </div>
     );
   }
 
   return (
-    <div className="cart">
-  <div className="close" onClick={ () =>  dispatch(toggleCart())}>[close]</div>
-  <h2>Shopping Cart</h2>
-  {cart.length ? (
-    <div>
-      {cart.map(item => (
-        <CartItem key={item._id} item={item} />
-      ))}
-      <div className="flex-row space-between">
-        <strong>Total: ${calculateTotal()}</strong>
-        {
-          Auth.loggedIn() ?
-          <button onClick={submitCheckout}>
-          Checkout
-        </button>
-        
-            :
+    <div className="cart-wrapper">
+      <div className="close" onClick={ () =>  dispatch(toggleCart())}>[close]</div>
+      <h2>Shopping Cart</h2>
+      {cart.length ? (
+        <div>
+          <div className="cart-item">
+            {cart.map(item => (
+              <CartItem key={item._id} item={item} />
+            ))}
+          </div>
+          
+          <div className="cart-bottom">
+            <strong>Total: ${calculateTotal()}</strong>
+            {
+              Auth.loggedIn() ?
+            <button onClick={submitCheckout}>
+              Checkout
+            </button>
+              :
             <span>(log in to check out)</span>
-        }
-      </div>
+            }
+          </div>
     </div>
   ) : (
     <h3>
-      <span role="img" aria-label="shocked">
-        😱
-      </span>
       You haven't added anything to your cart yet!
     </h3>
   )}

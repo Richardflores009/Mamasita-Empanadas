@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Cart from '../Cart';
 
 
 function Nav() {
@@ -8,13 +9,13 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
+        <ul className="nav">
+          <li className="nav-item">
             <Link to="/orderHistory">
               Order History
             </Link>
           </li>
-          <li className="mx-1">
+          <li className="nav-item">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
@@ -24,31 +25,40 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">
-              Signup
+        <ul className="nav">
+          <li className="nav-item">
+            <Link to="/">
+              Home
             </Link>
           </li>
-          <li className="mx-1">
-            <Link to="/login">
-              Login
+          <li className="nav-item">
+            <Link to="/story">
+             Our Story
             </Link>
           </li>
-          <li className="mx-1">
+          
+          <li className="nav-item">
             <Link to="/menu">
               Menu
             </Link>
           </li>
-          <li className="mx-1">
-            <Link to="/story">
-             Our Story
-            </Link>
-            <li className="mx-1">
+
+          <li className="nav-item">
             <Link to="/contact">
               Contact
             </Link>
           </li>
+
+          <li className="nav-item">
+            <Link to="/signup">
+              Signup
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/login">
+              Login
+            </Link>
           </li>
         </ul>
       );
@@ -56,10 +66,13 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
+    <header>
+
+      <h1 className="nav-title">
         <Link to="/">
-          Empanadas
+          Mamasita's Empanadas
+          <br></br>
+          <span className="header-small">The Queen of Empanadas.</span>
         </Link>
       </h1>
 
