@@ -41,9 +41,10 @@ Tara Brichetto <br>
 
 ## Links:
 Deployed Application:  <br>
-Github Repository: https://github.com/Richardflores009/group-project3 <br>
+Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 
 ## Screenshots:
+![Alt text](/client/public/screenshot.JPG?raw=true "Mamasitas-Empanadas")
 
 ## Questions:
 Contact me:<br>

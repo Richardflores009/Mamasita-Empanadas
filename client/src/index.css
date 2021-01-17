@@ -462,4 +462,7 @@ button[disabled] {
 span[role="img"] {
   cursor: default;
 }
+.download {
+  border:rgb(228, 46, 1);
+}
 
