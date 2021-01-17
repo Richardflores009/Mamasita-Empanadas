@@ -286,6 +286,23 @@ nav {
 .menu-item-link:hover {
   cursor: pointer;
 }
+.download {
+  border:#ffcb47;
+  color:#ffcb47;
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem .2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color:#7b2d26;
+  color:#ffcb47;
+}
 
 /*contact us*/
 .contact-wrapper {
@@ -462,7 +479,5 @@ button[disabled] {
 span[role="img"] {
   cursor: default;
 }
-.download {
-  border:rgb(228, 46, 1);
-}
+
 
