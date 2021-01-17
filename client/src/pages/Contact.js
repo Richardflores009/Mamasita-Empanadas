@@ -1,11 +1,16 @@
 import React from "react";
 import Cart from '../components/Cart';
+import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
   return (
     <section className="form-wrapper">
         <h1 className="content-title">Have Any Questions?</h1>
         <div className="contact-wrapper">
+
+        <div>
+          <ContactForm />
+        </div>
 
           <div className="contact-left">
             <iframe 

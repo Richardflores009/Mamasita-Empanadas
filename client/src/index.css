@@ -480,4 +480,20 @@ span[role="img"] {
   cursor: default;
 }
 
+#contact-form {
+  display: block;
+  width: 100%;
+}
+
+#contact-form h2 {
+  text-align: center;
+}
+
+#contact-form p {
+  font-style: italic;
+  font-size: x-small;
+  text-align: center;
+  margin-top: 5px;
+}
+
 
