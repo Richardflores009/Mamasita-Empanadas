@@ -5,11 +5,9 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Breakfast' },
+    { name: 'Lunch' },
+    { name: 'Dessert' }
   ]);
 
   console.log('categories seeded');
@@ -18,113 +16,114 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
-      description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+      name: 'Ham, Egg & Cheese',
+      categoryName: 'Breakfast',
+      description:'Breakfast',
+      image: 'https://user-images.githubusercontent.com/65309756/104776365-35a8ba00-5737-11eb-86da-1b8b2f524bd4.png',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 1.00,
+      quantity: 100
     },
     {
-      name: 'Canned Coffee',
-      description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+      name: 'Breakfast Italian Sausage',
+      categoryName: 'Breakfast',
+      description:'Breakfast',
+      image: 'https://user-images.githubusercontent.com/65309756/104776095-be732600-5736-11eb-9d67-769f4f3ad289.png',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
-    },
-    {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
-      description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      price: 7.99,
-      quantity: 20
-    },
-    {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
-      description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
-    },
-    {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
+      price: 1.00,
       quantity: 100
     },
     {
-      name: 'Camera',
+      name: 'Breakfast Chorizo',
+      categoryName: 'Breakfast',
+      category: categories[0]._id,
+      description:'Breakfast',
+      image: 'https://user-images.githubusercontent.com/65309756/104776448-57a23c80-5737-11eb-85c3-918ada77a751.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Ground Beef',
+      categoryName: 'Lunch',
+      category: categories[1]._id,
+      description:'Lunch',
+      image: 'https://user-images.githubusercontent.com/65309756/104778019-e44dfa00-5739-11eb-953c-85ed3b405ba4.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Chicken',
+      categoryName: 'Lunch',
+      category: categories[1]._id,
+      description:'Lunch',
+      image: 'https://user-images.githubusercontent.com/65309756/104778067-fd56ab00-5739-11eb-8c51-c38540081e4e.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Buffalo Chicken',
+      categoryName: 'Lunch',
+      category: categories[1]._id,
+      description:'Lunch',
+      image: 'https://user-images.githubusercontent.com/65309756/104778108-119aa800-573a-11eb-853f-cab09f4a1187.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Jalapeño Chicken',
+      categoryName: 'Lunch',
+      category: categories[1]._id,
+      description:'Lunch',
+      image: 'https://user-images.githubusercontent.com/65309756/104778338-6ccc9a80-573a-11eb-995e-514952d31aa4.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Vegan',
+      categoryName: 'Lunch',
+      category: categories[1]._id,
+      description:'Lunch',
+      image: 'https://user-images.githubusercontent.com/65309756/104778396-853cb500-573a-11eb-8f83-2684530dbc5b.png',
+      price: 1.00,
+      quantity: 100
+    },
+    {
+      name: 'Baked Cherry',
+      categoryName: 'Dessert',
       category: categories[2]._id,
-      description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+      description:'Dessert',
+      image: 'https://user-images.githubusercontent.com/65309756/104778601-dfd61100-573a-11eb-82d9-843ba2fdf024.png',
+      price: 1.00,
+      quantity: 100
     },
     {
-      name: 'Tablet',
+      name: 'Baked Apple',
+      categoryName: 'Dessert',
       category: categories[2]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
-    },
-    {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
+      description:'Dessert',
+      image: 'https://user-images.githubusercontent.com/65309756/104778657-f67c6800-573a-11eb-9d99-49a4c2a29a17.png',
+      price: 1.00,
       quantity: 100
     },
     {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
+      name: 'Baked Peach',
+      categoryName: 'Dessert',
+      category: categories[2]._id,
+      description:'Dessert',
+      image: 'https://user-images.githubusercontent.com/65309756/104778818-38a5a980-573b-11eb-855c-b7f64e1f3356.png',
+      price: 1.00,
       quantity: 100
     },
     {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
+      name: 'Chocolate Smores',
+      categoryName: 'Dessert',
+      category: categories[2]._id,
+      description:'Dessert',
+      image: 'https://user-images.githubusercontent.com/65309756/104778731-157afa00-573b-11eb-8357-2011bf50036b.png',
+      price: 1.00,
+      quantity: 100
     }
-  ]);
+    ]);
 
   console.log('products seeded');
 
