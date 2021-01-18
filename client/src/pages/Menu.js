@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { idbPromise } from "../utils/helpers";
 
 
-import { QUERY_PRODUCTS, QUERY_CATEGORIES } from "../utils/queries";
+import { QUERY_PRODUCTS} from "../utils/queries";
 
 
 import { useDispatch, useSelector } from "react-redux";
@@ -12,9 +12,6 @@ import { updateProducts } from "../utils/store/actions";
 
 
 import Cart from '../components/Cart';
-import breakfastMenu from '../assets/json/breakfast.json';
-import lunchMenu from '../assets/json/lunch.json';
-import dessertMenu from '../assets/json/dessert.json';
 import MenuCard from '../components/MenuCard';
 import pdfMenu from '../assets/pdf/pdfMenu.pdf';
 var buttonStyle = {
@@ -26,7 +23,7 @@ var buttonStyle = {
 const Menu = () => {
   const state = useSelector(state => state.reducer)
   // const { currentCategory } = state;
-  const currentCategory = useSelector(state => state.reducer.currentCategory)
+ 
 
 
   const dispatch = useDispatch();

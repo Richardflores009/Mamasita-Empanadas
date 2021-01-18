@@ -1,6 +1,4 @@
-import react from 'react';
-import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
+
 import { idbPromise } from "../../utils/helpers";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -12,8 +10,7 @@ function MenuCard(props) {
     image,
     name,
     _id,
-    price,
-    quantity
+    price
   } = props;
 
 

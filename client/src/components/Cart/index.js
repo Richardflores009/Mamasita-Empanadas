@@ -71,7 +71,7 @@ if (!cartOpen) {
       <div className="cart-closed" onClick={ () =>  dispatch(toggleCart())}>
         <span
           role="img"
-          aria-label="trash"><i class="fa fa-shopping-cart cart-i" aria-hidden="true"></i>
+          aria-label="trash"><i className="fa fa-shopping-cart cart-i" aria-hidden="true"></i>
           </span>
       </div>
     );

@@ -10,7 +10,7 @@ const Story = () => {
           </p>
       </div>
 
-      <div class="content-title">Our Story</div>
+      <div className="content-title">Our Story</div>
 
       <div className="story-div">
         <div className="story-div-left">
@@ -37,7 +37,7 @@ const Story = () => {
       <div className="inside"></div>
 
       <div className="our-values">
-        <div class="sub-content-title">Our Values</div>
+        <div className="sub-content-title">Our Values</div>
         <p>
           To achieve the best tasting food, we know that getting our ingredients from local farms makes a big difference.
           Using the freshest, most organic ingredients ensures that every batch of empanadas we make are the best. 
@@ -46,21 +46,21 @@ const Story = () => {
       </div>
 
       <div className="our-partners">
-        <div class="sub-content-title">Our Partners</div>
-        <div class="partner-wrapper">
+        <div className="sub-content-title">Our Partners</div>
+        <div className="partner-wrapper">
 
           <div className="partner-item">
-            <a href="https://www.citifarms.com/" target="_blank"><div className="partner-1"></div></a>
+            <a href="https://www.citifarms.com/" target="_blank" rel="noreferrer"><div className="partner-1"></div></a>
             <p>CitiFarms</p>
           </div>
           
           <div className="partner-item">
-            <a href="http://mayasfarm.com/" target="_blank"><div className="partner-2"></div></a>
+            <a href="http://mayasfarm.com/" target="_blank" rel="noreferrer"><div className="partner-2"></div></a>
             <p>Mayas Farm</p>
           </div>
           
           <div className="partner-item">
-            <a href="http://www.doublecheckranch.com/" target="_blank"><div className="partner-3"></div></a>
+            <a href="http://www.doublecheckranch.com/" target="_blank" rel="noreferrer"><div className="partner-3"></div></a>
             <p>Double Check Ranch
             </p>
           </div>
