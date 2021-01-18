@@ -1,21 +1,53 @@
 import react from 'react';
+import { Link } from "react-router-dom";
+import { pluralize } from "../../utils/helpers"
+import { idbPromise } from "../../utils/helpers";
+
+import { useDispatch, useSelector } from "react-redux";
+import { updateCartQuantity, addToCart } from "../../utils/store/actions";
 
 function MenuCard(props) {
+    const dispatch = useDispatch();
+  const {
+    image,
+    name,
+    _id,
+    price,
+    quantity
+  } = props;
+
+
+  const cart = useSelector(state=> state.reducer.cart)
+
+  const addToCarts = (e) => {
+    const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+    if (itemInCart) {
+      const cartItem = itemInCart.purchaseQuantity + 1
+      dispatch(updateCartQuantity(_id, cartItem ))
+      idbPromise('cart', 'put', {
+        ...itemInCart,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+      });
+    } else {
+      dispatch(addToCart(props, 1));
+      idbPromise('cart', 'put', { ...props, purchaseQuantity: 1 });
+    }
+  }
     return (
         <div className="menu-card-wrapper">
             <div className="menu-card">
                 <div className="menu-item-img">
-                    <img src={props.image} alt={props.name}/>
+                    <img src={image} alt={name}/>
                 </div>
                 <div className="menu-item-body">
                     <div className="menu-item-title">
-                        <p>{props.name}</p>
+                        <p>{name}</p>
                     </div>
                     <div className="menu-item-price">
-                        <p>{props.price}</p>
+                        <p>{price}</p>
                     </div>
                     <div className="menu-item-link">
-                        <a href="#" target="_blank" >Add To Cart</a>
+                        <button onClick={addToCarts} >Add To Cart</button>
                     </div>
                 </div>
             </div>

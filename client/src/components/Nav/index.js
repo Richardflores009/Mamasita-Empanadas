@@ -11,6 +11,22 @@ function Nav() {
       return (
         <ul className="nav">
           <li className="nav-item">
+            <Link to="/">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/story">
+             Our Story
+            </Link>
+          </li>
+          
+          <li className="nav-item">
+            <Link to="/menu">
+              Menu
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to="/orderHistory">
               Order History
             </Link>
@@ -21,6 +37,7 @@ function Nav() {
               Logout
             </a>
           </li>
+          
         </ul>
       );
     } else {
