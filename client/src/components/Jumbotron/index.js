@@ -6,7 +6,7 @@ function Jumbotron({ children }) {
     <div className="hero">
       <div className="hero-body"> 
         <h1> Made With <br></br> Love & Care</h1>
-        <button>
+        <button className="hero-btn">
           <Link to="/menu">
             Order Online
           </Link>

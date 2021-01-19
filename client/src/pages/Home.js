@@ -4,7 +4,7 @@ import Cart from '../components/Cart';
 
 const Home = () => {
   return (
-    <section className="container">
+    <section>
       <Cart />
 
       <Jumbotron/>
