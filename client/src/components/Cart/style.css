@@ -96,6 +96,13 @@
   
     .cart-closed {
       position: relative;
-      margin: 0 auto;
+      text-align: center;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+      background: var(--primary);
     }
   }

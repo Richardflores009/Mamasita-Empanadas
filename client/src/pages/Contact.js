@@ -4,13 +4,27 @@ import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
   return (
-    <section className="form-wrapper">
-        <h1 className="content-title">Have Any Questions?</h1>
+    <section>
+      <Cart />
+      <div className="contact-form-wrapper">
+      <h1 className="content-title">Have Any Questions?</h1>
         <div className="contact-wrapper">
 
-        <div>
-          <ContactForm />
-        </div>
+          <div>
+            <ContactForm />
+          </div>
+          
+          <div className="contact-right">
+            <p>Please don't hesitate to reach out if you have any questions! 
+              We want to make sure each customer gets the best experience with us. 
+              Go ahead and contact us via email, or social media! 
+              We can't wait to hear from you!
+
+              <br></br><span className="contact-text-space">Sincerely,</span><br></br>
+
+              <span className="contact-text-space">Mamasita's Empanadas</span>
+            </p>
+          </div>
 
           <div className="contact-left">
             <iframe 
@@ -25,28 +39,10 @@ const Contact = () => {
               tabindex="0"
             ></iframe>
           </div>
-
-          <div className="contact-right">
-            <p>Please don't hesitate to reach out if you have any questions! 
-              We want to make sure each customer gets the best experience with us. 
-              Go ahead and contact us via email, or social media! 
-              We can't wait to hear from you!
-
-              <br></br><span className="contact-text-space">Sincerely,</span><br></br>
-
-              <span className="contact-text-space">Mamasita's Empanadas</span>
-            </p>
-            <ul className="contact-list"> 
-              <li className="contact-item" alt='email link'><div href="mailto:mamasitasempanadas@mail.com"><i className="fa fa-envelope" aria-hidden="true"></i></div></li>
-              {/* <li><a href='#'><i class="fa fa-yelp" aria-hidden="true"></i></a></li> */}
-              <li><div href='https://www.facebook.com/' alt='facebook link'><i className="fa fa-facebook-square" aria-hidden="true"></i></div></li>
-              {/* <li><a href='#'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href='#'><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li> */}
-            </ul>
-          </div>
         </div>
 
-      <Cart />
+      </div>
+        
     </section>
   );
 };
