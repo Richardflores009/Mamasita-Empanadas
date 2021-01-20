@@ -1,4 +1,4 @@
-# group-project
+# Mamasita Empañadas
 
 ## Table of Contents
 * [Description](#description)
@@ -8,19 +8,25 @@
 * [Contributors](#contributors)
 * [Links](#links)
 * [Screenshots](#screenshots)
+* [Future Developments](#futuredevelopments)
 * [Questions](#questions)
 
 ## Description:
-
+Our team created Mamasita's Enchiladas as our final project for the University of Arizona's coding bootcamp. The site allows users to create an account, order from an interactive menu, view past orders, and learn more about the business. 
 
 ## Installation:
 1. Clone from Github repository. <br>
-3. Install required npm packages: <br>
-* react.js <br>
-* mongodb <br>
-* mongoose <br>
-* graphQl <br>
-* redux <br>
+2. Install required npm packages: <br>
+* Apollo <br>
+* Bcrypt <br>
+* Express <br>
+* GraphQL <br>
+* Mongoose <br>
+* Node.js <br>
+* Nodemon <br>
+* React <br>
+* Redux <br>
+* Stripe <br>
 
 
 
@@ -33,17 +39,30 @@ Through Local Server:<br>
 This Repository is covered under the following license: [ISC]
 
 ## Contributors:
-Richard Flores
+Christopher Walston <br>
+Joseph DeFelice <br>
+Richard Flores <br>
+Stephen Pena <br>
+Tara Brichetto <br>
 
 ## Links:
-Deployed Application: https://still-spire-22068.herokuapp.com/ <br>
-Github Repository: https://github.com/Richardflores009/shop-shop <br>
+Deployed Application:  https:// https://mamasita-empanadas.herokuapp.com//<br>
+Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 
 ## Screenshots:
+![Alt text](/client/public/screenshot.JPG?raw=true "Mamasitas-Empanadas")
+![Alt text](/client/public/screenshot2.JPG?raw=true "Mamasitas-Empanadas")
 
-![](https://raw.githubusercontent.com/Richardflores009/shop-shop/main/assets/img/Screen%20Shot%202021-01-10%20at%204.12.37%20PM.png)
+## Future Developments:
+When the business owner is ready, we will link the social media icons to her social media pages. We will also make the contact form functional. 
 
 ## Questions:
-Contact me:<br>
+Contact Us:[]<br>
 Github: [https://github.com/Richardflores009](https://github.com/Richardflores009)<br>
 Email: [richardflores009@gmail.com](richardflores009@gmail.com)<br>
+Email: [penaone@gmail.com](penaone@gmail.com) <br>
+Email: [tara.brichetto@gmail.com] <br>
+Email: [chrisrw300@gmail.com] <br>
+Email: [defelicejoseph@outlook.com] <br>
+
+

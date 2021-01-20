@@ -8,6 +8,11 @@ const productSchema = new Schema({
     required: true,
     trim: true
   },
+  categoryName: {
+    type: String,
+    required: true,
+    trim: true
+  },
   description: {
     type: String
   },
