@@ -8,6 +8,7 @@
 * [Contributors](#contributors)
 * [Links](#links)
 * [Screenshots](#screenshots)
+* [Future Developments](#futuredevelopments)
 * [Questions](#questions)
 
 ## Description:
@@ -40,13 +41,23 @@ Stephen Pena <br>
 Tara Brichetto <br>
 
 ## Links:
-Deployed Application: https://mamasita-empanadas.herokuapp.com/ <br>
+Deployed Application:  https:// https://mamasita-empanadas.herokuapp.com//<br>
 Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 
 ## Screenshots:
 ![Alt text](/client/public/screenshot.JPG?raw=true "Mamasitas-Empanadas")
+![Alt text](/client/public/screenshot2.JPG?raw=true "Mamasitas-Empanadas")
+
+## Future Developments:
+When the business owner is ready to use social media the we will link the social media icons to her social media.
 
 ## Questions:
-Contact me:<br>
+Contact me:[]<br>
 Github: [https://github.com/Richardflores009](https://github.com/Richardflores009)<br>
 Email: [richardflores009@gmail.com](richardflores009@gmail.com)<br>
+Email: [penaone@gmail.com](penaone@gmail.com)
+Email: [tara.brichetto@gmail.com]
+Email: [chrisrw300@gmail.com]
+Email: [defelicejoseph@outlook.com]
+
+
