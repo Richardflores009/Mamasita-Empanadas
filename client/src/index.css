@@ -305,11 +305,29 @@ button {
 }
 
 /*contact us*/
+
 .contact-wrapper {
   margin: 11px 0;
   display: flex;
   text-align: left;
 }
+
+#contact-form {
+  display: block;
+  width: 100%;
+}
+
+#contact-form h2 {
+  text-align: center;
+}
+
+#contact-form p {
+  font-style: italic;
+  font-size: x-small;
+  text-align: center;
+  margin-top: 5px;
+}
+
 .contact-right {
   width: 100%;
   display: block;
@@ -480,20 +498,9 @@ span[role="img"] {
   cursor: default;
 }
 
-#contact-form {
-  display: block;
-  width: 100%;
+.save-order {
+  background: white;
 }
 
-#contact-form h2 {
-  text-align: center;
-}
-
-#contact-form p {
-  font-style: italic;
-  font-size: x-small;
-  text-align: center;
-  margin-top: 5px;
-}
 
 
