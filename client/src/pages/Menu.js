@@ -67,9 +67,11 @@ function filterDessert() {
 }
   return (
     <section>
-        <h1 className="content-title">Menu</h1>
-        
-        <button> <a className="download" style={buttonStyle} href={pdfMenu} download>Printable Menu</a> </button>
+      <Cart />
+        <h1 className="content-title">Our Menu</h1>
+        <div className="download-menu">
+          <p>or, you may <a style={buttonStyle} href={pdfMenu} download>print our menu</a></p>
+        </div>
         
         <p className="sub-content-title">- Breakfast -</p>
         
@@ -87,8 +89,10 @@ function filterDessert() {
             ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3 className="no-products">You haven't added any products yet!</h3>
       )}
+
+
           {/* {state.map(bmenu => (
               <MenuCard
               id={bmenu.id}
@@ -114,8 +118,9 @@ function filterDessert() {
             ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3 className="no-products">You haven't added any products yet!</h3>
       )}
+        
 
         <p className="sub-content-title">- Dessert- </p>
         {state.products.length ? (
@@ -132,11 +137,8 @@ function filterDessert() {
             ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3 className="no-products">You haven't added any products yet!</h3>
       )}
-
-
-      <Cart />
     </section>
   );
 };

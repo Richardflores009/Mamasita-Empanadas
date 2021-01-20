@@ -79,11 +79,11 @@ if (!cartOpen) {
 
   return (
     <div className="cart-wrapper">
-      <div className="close" onClick={ () =>  dispatch(toggleCart())}>[close]</div>
-      <h2>Shopping Cart</h2>
+      <div className="close" onClick={ () =>  dispatch(toggleCart())}><i class="fa fa-times" aria-hidden="true"></i></div>
+      <h2>Your Order</h2>
       {cart.length ? (
         <div>
-          <div className="cart-item">
+          <div className="cart-item-wrapper">
             {cart.map(item => (
               <CartItem key={item._id} item={item} />
             ))}
@@ -102,8 +102,8 @@ if (!cartOpen) {
           </div>
     </div>
   ) : (
-    <h3>
-      You haven't added anything to your cart yet!
+    <h3 className="no-products">
+      Your order is empty!
     </h3>
   )}
 </div>
