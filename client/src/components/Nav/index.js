@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import Cart from '../Cart';
+
 
 
 function Nav() {
@@ -10,6 +10,22 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <ul className="nav">
+          <li className="nav-item">
+            <Link to="/">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/story">
+             Our Story
+            </Link>
+          </li>
+          
+          <li className="nav-item">
+            <Link to="/menu">
+              Menu
+            </Link>
+          </li>
           <li className="nav-item">
             <Link to="/orderHistory">
               Order History
@@ -21,6 +37,7 @@ function Nav() {
               Logout
             </a>
           </li>
+          
         </ul>
       );
     } else {
