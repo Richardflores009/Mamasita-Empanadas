@@ -54,7 +54,7 @@ Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 ![Alt text](/client/public/screenshot2.JPG?raw=true "Mamasitas-Empanadas")
 
 ## Future Developments:
-When the business owner is ready, we will link the social media icons to her social media pages.
+When the business owner is ready, we will link the social media icons to her social media pages. We will also make the contact form functional. 
 
 ## Questions:
 Contact Us:[]<br>
