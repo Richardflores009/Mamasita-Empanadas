@@ -40,7 +40,7 @@ Stephen Pena <br>
 Tara Brichetto <br>
 
 ## Links:
-Deployed Application:  <br>
+Deployed Application: https://mamasita-empanadas.herokuapp.com/ <br>
 Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 
 ## Screenshots:
