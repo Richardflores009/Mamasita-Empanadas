@@ -12,16 +12,21 @@
 * [Questions](#questions)
 
 ## Description:
-
+Our team created Mamasita's Enchiladas as our final project for the University of Arizona's coding bootcamp. The site allows users to create an account, order from an interactive menu, view past orders, and learn more about the business. 
 
 ## Installation:
 1. Clone from Github repository. <br>
-3. Install required npm packages: <br>
-* react.js <br>
-* mongodb <br>
-* mongoose <br>
-* graphQl <br>
-* redux <br>
+2. Install required npm packages: <br>
+* Apollo <br>
+* Bcrypt <br>
+* Express <br>
+* GraphQL <br>
+* Mongoose <br>
+* Node.js <br>
+* Nodemon <br>
+* React <br>
+* Redux <br>
+* Stripe <br>
 
 
 
@@ -49,15 +54,15 @@ Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
 ![Alt text](/client/public/screenshot2.JPG?raw=true "Mamasitas-Empanadas")
 
 ## Future Developments:
-When the business owner is ready to use social media the we will link the social media icons to her social media.
+When the business owner is ready, we will link the social media icons to her social media pages.
 
 ## Questions:
-Contact me:[]<br>
+Contact Us:[]<br>
 Github: [https://github.com/Richardflores009](https://github.com/Richardflores009)<br>
 Email: [richardflores009@gmail.com](richardflores009@gmail.com)<br>
-Email: [penaone@gmail.com](penaone@gmail.com)
-Email: [tara.brichetto@gmail.com]
-Email: [chrisrw300@gmail.com]
-Email: [defelicejoseph@outlook.com]
+Email: [penaone@gmail.com](penaone@gmail.com) <br>
+Email: [tara.brichetto@gmail.com] <br>
+Email: [chrisrw300@gmail.com] <br>
+Email: [defelicejoseph@outlook.com] <br>
 
 

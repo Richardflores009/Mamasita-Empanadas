@@ -523,4 +523,9 @@ button[disabled] {
 
 span[role="img"] {cursor: default;}
 
-
+.save-order {
+  background: white;
+  border: solid 1px;
+  padding: 5px;
+  z-index: 2;
+}
