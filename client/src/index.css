@@ -558,10 +558,17 @@ footer a:hover {color: var(--yellow);}
   transition: 0.3s;
 }
 
-/*figure these out*/
+/*misc*/
 button[disabled] {
   cursor: default;
   opacity: .8;
 }
 
 span[role="img"] {cursor: default;}
+
+.save-order {
+  background-color: white;
+  z-index: 4;
+  padding: 5px;
+  border: solid;
+}
