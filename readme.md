@@ -45,6 +45,9 @@ Richard Flores <br>
 Stephen Pena <br>
 Tara Brichetto <br>
 
+## Contributor Alias Chart for Team Grading
+![Alt text](/Peers.png "Contributor Alias")
+
 ## Links:
 Deployed Application:  https:// https://mamasita-empanadas.herokuapp.com//<br>
 Github Repository: https://github.com/Richardflores009/Mamasita-Empanadas <br>
